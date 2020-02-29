@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Home");
     }
     private String input;
 
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     public void launchReview(View v){
         //launch a new activity
         Intent i = new Intent(this, ReviewActivity.class);
+        String msg = ((EditText)findViewById(R.id.editText)).getText().toString();
+        i.putExtra("COOL", msg);
         startActivity(i);
     }
 
