@@ -49,5 +49,10 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("COOL", msg);
         startActivity(i);
     }
+    public void email(View v){
+        //launch a new activity
+        Intent i = new Intent(this, send_email.class);
+        startActivity(i);
+    }
 
 }

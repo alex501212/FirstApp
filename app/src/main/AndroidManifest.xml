@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReviewActivity" android:label="@string/review_activity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ComposeMessageActivity"></activity>
+        <activity android:name=".send_email" />
+        <activity
+            android:name=".ReviewActivity"
+            android:label="@string/review_activity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
